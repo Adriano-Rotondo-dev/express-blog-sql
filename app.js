@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3030;
 const postsRouter = require("./routing/posts");
 
 app.listen(PORT, () => {
