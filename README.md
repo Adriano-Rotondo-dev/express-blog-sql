@@ -13,8 +13,8 @@
 - Verifichiamo su Postman che la risposta sia corretta ✔
 
 ## Milestone 3
-- Facciamo sì che l’API di SHOW restituisca il post desiderato in formato JSON
-- Verifichiamo su Postman che la risposta sia corretta
+- Facciamo sì che l’API di SHOW restituisca il post desiderato in formato JSON ✔
+- Verifichiamo su Postman che la risposta sia corretta ✔
 
 ## Milestone 4
 - Facciamo sì che l’API di DESTROY permetta di eliminare un post dal database
