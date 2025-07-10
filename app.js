@@ -1,0 +1,18 @@
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3306;
+const postsRouter = require("./routing/posts");
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port https://localhost:${PORT}`);
+});
+
+//TODO: ROUTES
+
+app.get("/", (req, res) => {
+  res.send("Wecolme to the POSTS API");
+});
+
+//*define posts router
+
+app.use("/posts", postsRouter);
