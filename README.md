@@ -22,6 +22,6 @@
 - Verifichiamo su MySQL Workbench che il post venga effettivamente rimosso ✔
 
 ### Bonus:
-- Completiamo le altre operazioni crud per la creazioen e aggiornamento di una risorsa.
-- Facciamo si che l'API di STORE permetta il salvataggio di un nuovo post
+- Completiamo le altre operazioni crud per la creazione e aggiornamento di una risorsa.
+- Facciamo si che l'API di STORE permetta il salvataggio di un nuovo post ✔
 - Facciamo si che l'API di UPDATE permetta la modifica di un post esistente

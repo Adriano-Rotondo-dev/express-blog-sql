@@ -8,7 +8,6 @@ function index(req, res) {
     console.log(err)
     console.log(results)
     res.json(results)
-
   })
 }
   // let filteredPosts = posts;
@@ -37,8 +36,14 @@ function show(req, res) {
   // res.json(post);
 
 function store(req, res) {
-  const id = req.params.id;
-  res.send(`Create a new post`);
+  console.log('This is the req.body')
+  const {title, content, image} = req.body
+  const sql = 'INSERT INTO posts (title, content, image) VALUES (?, ?, ?);'
+  connection.query(sql, [title, content, image], (err, results)=> {
+    if (err) return res.status(500).json({error: 'Database Query Failed'})
+      console.log(results)
+    res.send(`Created a new post in the database`);
+  })
 }
 
 function update(req, res) {

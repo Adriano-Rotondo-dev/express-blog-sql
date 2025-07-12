@@ -6,6 +6,8 @@ const postsRouter = require("./routing/posts");
 app.listen(PORT, () => {
   console.log(`Server is running on port https://localhost:${PORT}`);
 });
+app.use(express.static('public'))
+app.use(express.json())
 
 //TODO: ROUTES
 
